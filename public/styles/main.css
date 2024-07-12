@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#form-container {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+}
+
+body {
+    background-color: blueviolet;
+    color: white;
+}
+
+input{
+    /* border: 5px blue solid; */
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    margin: 5px;
+}

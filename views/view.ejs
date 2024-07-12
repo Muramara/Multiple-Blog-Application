@@ -1,0 +1,16 @@
+<div><%- include("partials/header.ejs") %></div>
+
+<div id="form-container">
+    <form action="/edited" method="post">
+        <textarea name="text"><%= text %></textarea>
+        <textarea name="textindex" readonly hidden><%= textIndex %></textarea>
+        <input type="submit" value="save">
+    </form>
+    <form action="/delete" method="post">
+        <textarea name="text" hidden><%= text %></textarea>
+        <textarea name="textindex" readonly hidden><%= textIndex %></textarea>
+        <br><input type="submit" value="delete">
+    </form>
+</div>
+
+<div><%- include("partials/footer.ejs") %></div>

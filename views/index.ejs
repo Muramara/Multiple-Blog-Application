@@ -1,0 +1,13 @@
+<div><%- include("partials/header.ejs") %></div>
+
+<div id="form-container">
+  <body>
+    <form action="/register" method="POST">
+      <input type="text" name="fName" placeholder="First name" required><br>
+      <input type="password" name="password" id="pass" placeholder="Password" required><br>
+      <input type="submit" value="Login">
+    </form>
+  </body>
+</div>
+
+<div><%- include("partials/footer.ejs") %></div>

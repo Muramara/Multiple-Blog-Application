@@ -1,0 +1,13 @@
+<!-- link the css file in relation to the static folder declared in 'index.js' -->
+<link rel="stylesheet" href="/styles/main.css">
+
+<header>
+    <% if(locals.loggedOut){ %>
+        <h1><strong>LOGIN</strong></h1>
+    <% }else{ %>
+        <h1><strong>WEB BLOG APPLICATION</strong></h1><br><br>
+        <% if(locals.firstName){ %>
+            <h1>Welcome <%=firstName%>!</h1>
+        <% } %>
+    <% } %>
+</header>

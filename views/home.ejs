@@ -1,0 +1,22 @@
+<!-- 'include' function finds the files in relation to the views file -->
+<div><%- include("partials/header.ejs") %></div>
+
+<% if(locals.number){ %>
+    <% for (var i = 0; i < number; i++){%>
+        <div>
+            <form action="/view" method="post">
+                <% var index = inputs.indexOf(inputs[i]) %>
+                <textarea name="input" readonly><%= inputs[i] %></textarea>
+                <textarea name="index" readonly hidden><%= index %></textarea>
+                <input type="submit" value="view">
+            </form>
+        </div>
+<%} %>
+<a href="/first"><Button>Add post</Button></a>
+<%}else{%>
+    <a href="/first"><Button>Add post</Button></a>
+<%} %>
+
+<a href="/"><button>Logout</button></a>
+
+<div><%- include("partials/footer.ejs") %></div>
